@@ -61,6 +61,22 @@ teams          → Gerenciamento de times + popup de criação
 notifications  → Central de notificações
 ```
 
+### Dashboard
+
+![Dashboard](images/page-dashboard.png)
+
+### Detalhe da Tarefa
+
+![Detalhe da Tarefa](images/page-task-detail.png)
+
+### Central de Notificações
+
+![Notificações](images/page-notifications.png)
+
+### Sidebar (Reusable Element)
+
+![Sidebar](images/reusable-sidebar.png)
+
 ---
 
 ## Modelagem de Dados
@@ -73,6 +89,55 @@ Task          → title, description, status, priority, due_date,
 Comment       → content, author (User), task (Task)
 Notification  → message, type, is_read, recipient (User), related_task (Task)
 ```
+
+### Tipos de Dados
+
+| Tipo | Imagem |
+|---|---|
+| User | ![User](images/data-type-user.png) |
+| Team | ![Team](images/data-type-team.png) |
+| Task | ![Task](images/data-type-task.png) |
+| Comment | ![Comment](images/data-type-comment.png) |
+| Notification | ![Notification](images/data-type-notification.png) |
+
+---
+
+## Privacy Rules
+
+As regras de privacidade controlam o acesso aos dados por tipo e usuário autenticado.
+
+| Tipo | Imagem |
+|---|---|
+| User | ![Privacy User](images/privacy-user.png) |
+| Team | ![Privacy Team](images/privacy-team.png) |
+| Task | ![Privacy Task](images/privacy-task.png) |
+| Comment | ![Privacy Comment](images/privacy-comment.png) |
+| Notification | ![Privacy Notification](images/privacy-notification.png) |
+
+---
+
+## Workflows
+
+Principais fluxos de negócio implementados no Bubble.
+
+### Autenticação
+
+| Ação | Imagem |
+|---|---|
+| Login | ![Login](images/workflow-login.png) |
+| Erro de Login | ![Erro de Login](images/workflow-login-error.png) |
+| Cadastro | ![Cadastro](images/workflow-signup.png) |
+| Logout | ![Logout](images/workflow-logout.png) |
+| Página Protegida | ![Página Protegida](images/workflow-protected-page.png) |
+
+### Tarefas e Times
+
+| Ação | Imagem |
+|---|---|
+| Nova Tarefa | ![Nova Tarefa](images/workflow-new-task.png) |
+| Novo Time | ![Novo Time](images/workflow-new-team.png) |
+| Criar Comentário | ![Criar Comentário](images/workflow-create-comment.png) |
+| Marcar Notificações como Lidas | ![Notificações Lidas](images/workflow-read-all-notifications.png) |
 
 ---
 
